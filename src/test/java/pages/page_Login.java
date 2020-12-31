@@ -60,10 +60,6 @@ public class page_Login {
 	}
 	
 	public void assertValidReset() {
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
-		//lblReset = (WebElement) js.executeScript("$('div.fadable').get()");
-		
-		
 		lblReset.isDisplayed();
 	}
 	

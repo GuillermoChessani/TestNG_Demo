@@ -11,4 +11,4 @@
 			<class name="tests.test_Login_Invalid" />
 		</classes>
 	</test>
-</suite>	
+</suite>
