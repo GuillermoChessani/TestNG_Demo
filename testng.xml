@@ -11,4 +11,14 @@
 			<class name="tests.test_Login_Invalid" />
 		</classes>
 	</test>
+	<test name="Test3">
+		<classes>
+			<class name="tests.test_Dashboard_ApplyLeave" />
+		</classes>
+	</test>
+	<test name="Test4">
+		<classes>
+			<class name="tests.test_Dashboard_AssignLeave" />
+		</classes>
+	</test>
 </suite>
