@@ -18,13 +18,23 @@ public class test_Login_Valid {
 	WebDriver driver = null;
 	page_Login pf;
 
-	@Test
+	@Test(priority=1)
 	public void validLoginTest() {
 		pf = PageFactory.initElements(driver, page_Login.class);
+		driver.get(page_Login.URL);
 		pf.LogIn("Admin", "admin123");
 		pf.assertValidLogin();
 	}
 
+	@Test(priority=0)
+	public void validResetPasswordTest() {
+		pf = PageFactory.initElements(driver, page_Login.class);
+		pf.clickForgotPassword();
+		pf.setEmail("admin@email.com");
+		pf.clickSubmitReset();
+	}
+
+	
 	@BeforeTest
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
@@ -32,7 +42,7 @@ public class test_Login_Valid {
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com");
+		driver.get(page_Login.URL);
 	}
 
 	@AfterTest

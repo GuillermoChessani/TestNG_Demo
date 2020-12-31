@@ -1,135 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-30T06:07:28Z" name="Default suite" finished-at="2020-12-30T06:07:50Z" duration-ms="21873">
+  <suite started-at="2020-12-31T18:16:40Z" name="Tests_Login" finished-at="2020-12-31T18:17:13Z" duration-ms="33424">
     <groups>
     </groups>
-    <test started-at="2020-12-30T06:07:28Z" name="Default test" finished-at="2020-12-30T06:07:50Z" duration-ms="21873">
+    <test started-at="2020-12-31T18:16:40Z" name="Test1" finished-at="2020-12-31T18:16:57Z" duration-ms="16575">
       <class name="tests.test_Login_Valid">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Login_Valid@3cebbb30]" started-at="2020-12-30T06:07:28Z" name="setUp" finished-at="2020-12-30T06:07:38Z" duration-ms="9718" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T18:16:40Z" name="setUp" finished-at="2020-12-31T18:16:50Z" duration-ms="9946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:tests.test_Login_Valid@3cebbb30]" started-at="2020-12-30T06:07:38Z" name="validLoginTest" finished-at="2020-12-30T06:07:46Z" duration-ms="8015" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate an element using id=welcome
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DEDDFK5H2', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=welcome
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DEDDFK5H2', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-at pages.page_Login.assertValidLogin(page_Login.java:33)
-at tests.test_Login_Valid.validLoginTest(test_Login_Valid.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T18:16:50Z" name="validResetPasswordTest" finished-at="2020-12-31T18:16:52Z" duration-ms="1929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validResetPasswordTest -->
+        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T18:16:52Z" name="validLoginTest" finished-at="2020-12-31T18:16:56Z" duration-ms="3746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@3cebbb30]" started-at="2020-12-30T06:07:46Z" name="TearDown" finished-at="2020-12-30T06:07:50Z" duration-ms="4048" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DEDDFK5H2', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\dperez\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5076a46505408a76dbb4b12daad183f2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DEDDFK5H2', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\dperez\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5076a46505408a76dbb4b12daad183f2
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at tests.test_Login_Valid.TearDown(test_Login_Valid.java:40)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.afterRun(TestRunner.java:725)
-at org.testng.TestRunner.run(TestRunner.java:509)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T18:16:56Z" name="TearDown" finished-at="2020-12-31T18:16:57Z" duration-ms="875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- tests.test_Login_Valid -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+    <test started-at="2020-12-31T18:16:57Z" name="Test2" finished-at="2020-12-31T18:17:13Z" duration-ms="16791">
+      <class name="tests.test_Login_Invalid">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:16:57Z" name="setUp" finished-at="2020-12-31T18:17:04Z" duration-ms="7886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="no_UsernameTest()[pri:0, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:05Z" name="no_UsernameTest" finished-at="2020-12-31T18:17:08Z" duration-ms="3702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- no_UsernameTest -->
+        <test-method signature="invalid_UsernameTest()[pri:1, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:08Z" name="invalid_UsernameTest" finished-at="2020-12-31T18:17:09Z" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_UsernameTest -->
+        <test-method signature="no_PasswordTest()[pri:2, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:09Z" name="no_PasswordTest" finished-at="2020-12-31T18:17:10Z" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- no_PasswordTest -->
+        <test-method signature="invalid_PasswordTest()[pri:3, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:10Z" name="invalid_PasswordTest" finished-at="2020-12-31T18:17:11Z" duration-ms="1007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_PasswordTest -->
+        <test-method signature="forgot_PasswordSubmitTest()[pri:4, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:11Z" name="forgot_PasswordSubmitTest" finished-at="2020-12-31T18:17:12Z" duration-ms="1057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_PasswordSubmitTest -->
+        <test-method signature="forgot_PasswordCancelTest()[pri:5, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:12Z" name="forgot_PasswordCancelTest" finished-at="2020-12-31T18:17:12Z" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_PasswordCancelTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T18:17:13Z" name="TearDown" finished-at="2020-12-31T18:17:13Z" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- tests.test_Login_Invalid -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Tests_Login -->
 </testng-results>

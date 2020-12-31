@@ -53,6 +53,20 @@ public class test_Login_Invalid {
 		pf.assertInvalidLogin();
 	}
 	
+	@Test(priority=4)
+	public void forgot_PasswordSubmitTest() {
+		pf = PageFactory.initElements(driver, page_Login.class);
+		pf.clickForgotPassword();
+		pf.clickSubmitReset();
+	}
+	
+	@Test(priority=5)
+	public void forgot_PasswordCancelTest() {
+		pf = PageFactory.initElements(driver, page_Login.class);
+		//pf.clickForgotPassword();
+		pf.clickCancelReset();
+	}
+	
 
 	
 	@BeforeTest
@@ -62,7 +76,7 @@ public class test_Login_Invalid {
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com");
+		driver.get(page_Login.URL);
 	}
 
 	@AfterTest
