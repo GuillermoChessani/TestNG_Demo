@@ -1,97 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-31T23:12:04Z" name="Tests_Login" finished-at="2020-12-31T23:13:13Z" duration-ms="69453">
+  <suite started-at="2021-02-19T19:05:02Z" name="Tests_Login" finished-at="2021-02-19T19:05:24Z" duration-ms="21615">
     <groups>
     </groups>
-    <test started-at="2020-12-31T23:12:04Z" name="Test1" finished-at="2020-12-31T23:12:21Z" duration-ms="17592">
+    <test started-at="2021-02-19T19:05:02Z" name="Login - Google Chrome Execution" finished-at="2021-02-19T19:05:14Z" duration-ms="11646">
       <class name="tests.test_Login_Valid">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T23:12:04Z" name="setUp" finished-at="2020-12-31T23:12:14Z" duration-ms="10023" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:02Z" name="setUp" finished-at="2021-02-19T19:05:09Z" duration-ms="7058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T23:12:14Z" name="validResetPasswordTest" finished-at="2020-12-31T23:12:16Z" duration-ms="1912" status="PASS">
+        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:09Z" name="validResetPasswordTest" finished-at="2021-02-19T19:05:11Z" duration-ms="1722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validResetPasswordTest -->
-        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T23:12:16Z" name="validLoginTest" finished-at="2020-12-31T23:12:19Z" duration-ms="3220" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:11Z" name="validLoginTest" finished-at="2021-02-19T19:05:14Z" duration-ms="2595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@2aa5fe93]" started-at="2020-12-31T23:12:19Z" name="TearDown" finished-at="2020-12-31T23:12:21Z" duration-ms="2346" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:14Z" name="TearDown" finished-at="2021-02-19T19:05:14Z" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- tests.test_Login_Valid -->
-    </test> <!-- Test1 -->
-    <test started-at="2020-12-31T23:12:21Z" name="Test2" finished-at="2020-12-31T23:12:40Z" duration-ms="18217">
-      <class name="tests.test_Login_Invalid">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:21Z" name="setUp" finished-at="2020-12-31T23:12:30Z" duration-ms="8387" status="PASS">
+    </test> <!-- Login - Google Chrome Execution -->
+    <test started-at="2021-02-19T19:05:02Z" name="Login - Mozilla Firefox Execution" finished-at="2021-02-19T19:05:24Z" duration-ms="21615">
+      <class name="tests.test_Login_Valid">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:02Z" name="setUp" finished-at="2021-02-19T19:05:18Z" duration-ms="15727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="no_UsernameTest()[pri:0, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:30Z" name="no_UsernameTest" finished-at="2020-12-31T23:12:33Z" duration-ms="3523" status="PASS">
+        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:18Z" name="validResetPasswordTest" finished-at="2021-02-19T19:05:20Z" duration-ms="1655" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- no_UsernameTest -->
-        <test-method signature="invalid_UsernameTest()[pri:1, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:33Z" name="invalid_UsernameTest" finished-at="2020-12-31T23:12:34Z" duration-ms="1067" status="PASS">
+        </test-method> <!-- validResetPasswordTest -->
+        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:20Z" name="validLoginTest" finished-at="2021-02-19T19:05:22Z" duration-ms="2246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalid_UsernameTest -->
-        <test-method signature="no_PasswordTest()[pri:2, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:34Z" name="no_PasswordTest" finished-at="2020-12-31T23:12:35Z" duration-ms="412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- no_PasswordTest -->
-        <test-method signature="invalid_PasswordTest()[pri:3, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:35Z" name="invalid_PasswordTest" finished-at="2020-12-31T23:12:36Z" duration-ms="937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalid_PasswordTest -->
-        <test-method signature="forgot_PasswordSubmitTest()[pri:4, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:36Z" name="forgot_PasswordSubmitTest" finished-at="2020-12-31T23:12:37Z" duration-ms="1134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgot_PasswordSubmitTest -->
-        <test-method signature="forgot_PasswordCancelTest()[pri:5, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:37Z" name="forgot_PasswordCancelTest" finished-at="2020-12-31T23:12:38Z" duration-ms="583" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgot_PasswordCancelTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Invalid@13c10b87]" started-at="2020-12-31T23:12:38Z" name="TearDown" finished-at="2020-12-31T23:12:40Z" duration-ms="2132" status="PASS">
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:22Z" name="TearDown" finished-at="2021-02-19T19:05:24Z" duration-ms="1959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- tests.test_Login_Invalid -->
-    </test> <!-- Test2 -->
-    <test started-at="2020-12-31T23:12:40Z" name="Test3" finished-at="2020-12-31T23:12:57Z" duration-ms="17738">
-      <class name="tests.test_Dashboard_ApplyLeave">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Dashboard_ApplyLeave@4c15e7fd]" started-at="2020-12-31T23:12:40Z" name="setUp" finished-at="2020-12-31T23:12:49Z" duration-ms="9268" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AssignLeave()[pri:0, instance:tests.test_Dashboard_ApplyLeave@4c15e7fd]" started-at="2020-12-31T23:12:49Z" name="AssignLeave" finished-at="2020-12-31T23:12:55Z" duration-ms="6122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AssignLeave -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Dashboard_ApplyLeave@4c15e7fd]" started-at="2020-12-31T23:12:55Z" name="TearDown" finished-at="2020-12-31T23:12:57Z" duration-ms="2337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- tests.test_Dashboard_ApplyLeave -->
-    </test> <!-- Test3 -->
-    <test started-at="2020-12-31T23:12:57Z" name="Test4" finished-at="2020-12-31T23:13:13Z" duration-ms="15787">
-      <class name="tests.test_Dashboard_AssignLeave">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.test_Dashboard_AssignLeave@2a32de6c]" started-at="2020-12-31T23:12:57Z" name="setUp" finished-at="2020-12-31T23:13:06Z" duration-ms="8474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AssignLeave()[pri:0, instance:tests.test_Dashboard_AssignLeave@2a32de6c]" started-at="2020-12-31T23:13:06Z" name="AssignLeave" finished-at="2020-12-31T23:13:12Z" duration-ms="6320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AssignLeave -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Dashboard_AssignLeave@2a32de6c]" started-at="2020-12-31T23:13:12Z" name="TearDown" finished-at="2020-12-31T23:13:13Z" duration-ms="987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- tests.test_Dashboard_AssignLeave -->
-    </test> <!-- Test4 -->
+      </class> <!-- tests.test_Login_Valid -->
+    </test> <!-- Login - Mozilla Firefox Execution -->
   </suite> <!-- Tests_Login -->
 </testng-results>

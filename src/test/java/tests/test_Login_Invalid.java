@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
 public class test_Login_Invalid {
@@ -22,11 +23,8 @@ public class test_Login_Invalid {
 	public void no_UsernameTest() throws InterruptedException {
 		pf = PageFactory.initElements(driver, page_Login.class);
 		pf.setPassword("admin123");
-		Thread.sleep(1000);
 		pf.clickLogin();
-		Thread.sleep(1000);
 		pf.assertInvalidLogin();
-		Thread.sleep(1000);
 		
 	}
 	
@@ -60,15 +58,7 @@ public class test_Login_Invalid {
 		pf.clickSubmitReset();
 	}
 	
-	@Test(priority=5)
-	public void forgot_PasswordCancelTest() {
-		pf = PageFactory.initElements(driver, page_Login.class);
-		//pf.clickForgotPassword();
-		pf.clickCancelReset();
-	}
-	
-
-	
+		
 	@BeforeTest
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
@@ -82,6 +72,11 @@ public class test_Login_Invalid {
 	@AfterTest
 	public void TearDown() {
 		driver.close();
+		driver.quit();
+	}
+	
+	@AfterSuite
+	public void finish() {
 		driver.quit();
 	}
 

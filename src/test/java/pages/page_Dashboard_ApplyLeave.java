@@ -6,23 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class page_Dashboard_ApplyLeave {
-	// -------Apply Leave
-	@FindBy(id = "applyleave_txtLeaveType")
-	WebElement cmb_LeaveType;
-	@FindBy(id = "applyleave_txtFromDate")
-	WebElement cal_FromDate;
-	@FindBy(id = "//*[@for='applyleave_txtFromDate']")
-	WebElement lbl_FromDate;
-	@FindBy(id = "applyleave_txtToDate")
-	WebElement cal_ToDate;
-	@FindBy(id = "//*[@for='applyleave_txtToDate']")
-	WebElement lbl_ToDate;
-	@FindBy(id = "applyleave_txtComment")
-	WebElement txt_Comment;
-	@FindBy(id = "applyBtn")
-	WebElement btn_SubmitAssignLeave;
-
-	// -------Assign Leave
+	@FindBy(id = "applyleave_txtLeaveType")	WebElement cmb_LeaveType;
+	@FindBy(id = "applyleave_txtFromDate")	WebElement cal_FromDate;
+	@FindBy(id = "//*[@for='applyleave_txtFromDate']")	WebElement lbl_FromDate;
+	@FindBy(id = "applyleave_txtToDate")	WebElement cal_ToDate;
+	@FindBy(id = "//*[@for='applyleave_txtToDate']")	WebElement lbl_ToDate;
+	@FindBy(id = "applyleave_txtComment")	WebElement txt_Comment;
+	@FindBy(id = "applyBtn")	WebElement btn_SubmitAssignLeave;
 
 	public void selectLeaveType() {
 		Select drp_LeaveType = new Select(cmb_LeaveType);

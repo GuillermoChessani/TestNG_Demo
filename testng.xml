@@ -1,24 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Tests_Login" parallel="methods" thread-count="6">
-	<test name="Test1">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Tests_Login" parallel="methods" thread-count="20">
+	<parameter name="browser" value="firefox" />
+	<test name="Valid Login Scenarios">
 		<classes>
 			<class name="tests.test_Login_Valid" />
 		</classes>
-	</test> 
-	<test name="Test2">
+	</test>
+	<test name="Invalid Login Scenarios">
 		<classes>
 			<class name="tests.test_Login_Invalid" />
 		</classes>
 	</test>
-	<test name="Test3">
+	<test name="Apply a Leave through Dashboard">
 		<classes>
 			<class name="tests.test_Dashboard_ApplyLeave" />
 		</classes>
 	</test>
-	<test name="Test4">
+	<test name="Assign a Leave through Dashboard">
 		<classes>
 			<class name="tests.test_Dashboard_AssignLeave" />
+		</classes>
+	</test>
+	<test name="Add a new Employee">
+		<classes>
+			<class name="tests.test_PIM_Add_Employee" />
 		</classes>
 	</test>
 </suite>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Tests_Login" parallel="tests" thread-count="4">
+	
+	<test name="Login - Google Chrome Execution">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="tests.test_Login_Valid" />
+		</classes>
+	</test>
+	<test name="Login - Mozilla Firefox Execution">
+	<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="tests.test_Login_Valid" />
+		</classes>
+	</test>
+</suite>

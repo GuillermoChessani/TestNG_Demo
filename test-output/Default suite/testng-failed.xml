@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.test_Dashboard_ApplyLeave">
+      <class name="tests.test_PIM_Add_Employee">
         <methods>
-          <include name="setUp"/>
-          <include name="AssignLeave"/>
-          <include name="TearDown"/>
+          <include name="TestUser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.test_Dashboard_ApplyLeave -->
+      </class> <!-- tests.test_PIM_Add_Employee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

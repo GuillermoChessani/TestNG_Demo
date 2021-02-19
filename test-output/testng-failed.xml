@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="4" parallel="tests" name="Failed suite [Tests_Login]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Login - Google Chrome Execution(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.test_Dashboard_ApplyLeave">
+      <class name="tests.test_Login_Valid">
         <methods>
-          <include name="setUp"/>
-          <include name="AssignLeave"/>
           <include name="TearDown"/>
+          <include name="setUp"/>
+          <include name="validResetPasswordTest"/>
+          <include name="validLoginTest"/>
         </methods>
-      </class> <!-- tests.test_Dashboard_ApplyLeave -->
+      </class> <!-- tests.test_Login_Valid -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Login - Google Chrome Execution(failed) -->
+  <test thread-count="4" parallel="tests" name="Login - Mozilla Firefox Execution(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.test_Login_Valid">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setUp"/>
+          <include name="validResetPasswordTest"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- tests.test_Login_Valid -->
+    </classes>
+  </test> <!-- Login - Mozilla Firefox Execution(failed) -->
+</suite> <!-- Failed suite [Tests_Login] -->

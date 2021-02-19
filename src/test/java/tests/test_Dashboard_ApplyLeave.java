@@ -22,8 +22,9 @@ public class test_Dashboard_ApplyLeave {
 	page_Dashboard pd;
 	page_Dashboard_ApplyLeave al;
   
-@Test
-  public void AssignLeave() {
+@Test(enabled=false)
+// Test onHold: Need a Valid Leave to work
+  public void ApplyLeave() {
 		// Page: Login
 		pf = PageFactory.initElements(driver, page_Login.class);
 		driver.get(page_Login.URL);

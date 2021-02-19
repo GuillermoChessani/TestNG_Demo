@@ -7,23 +7,14 @@ import org.openqa.selenium.support.ui.Select;
 
 public class page_Dashboard_AssignLeave {
 
-	// -------Assign Leave
-	@FindBy(id = "assignleave_txtEmployee_empName")
-	WebElement txt_EmployeeName;
-	@FindBy(id = "assignleave_txtLeaveType")
-	WebElement cmb_LeaveType;
-	@FindBy(id = "assignleave_txtFromDate")
-	WebElement cal_FromDate;
-	@FindBy(id = "//*[@for='assignleave_txtFromDate']")
-	WebElement lbl_FromDate;
-	@FindBy(id = "assignleave_txtToDate")
-	WebElement cal_ToDate;
-	@FindBy(id = "//*[@for='assignleave_txtToDate']")
-	WebElement lbl_ToDate;
-	@FindBy(id = "assignleave_txtComment")
-	WebElement txt_Comment;
-	@FindBy(id = "assignBtn")
-	WebElement btn_SubmitAssignLeave;
+	@FindBy(id = "assignleave_txtEmployee_empName")	WebElement txt_EmployeeName;
+	@FindBy(id = "assignleave_txtLeaveType")	WebElement cmb_LeaveType;
+	@FindBy(id = "assignleave_txtFromDate")	WebElement cal_FromDate;
+	@FindBy(id = "//*[@for='assignleave_txtFromDate']")	WebElement lbl_FromDate;
+	@FindBy(id = "assignleave_txtToDate")	WebElement cal_ToDate;
+	@FindBy(id = "//*[@for='assignleave_txtToDate']")	WebElement lbl_ToDate;
+	@FindBy(id = "assignleave_txtComment")	WebElement txt_Comment;
+	@FindBy(id = "assignBtn")	WebElement btn_SubmitAssignLeave;
 
 	public void setEmployeeName() {
 		txt_EmployeeName.sendKeys("John Smith");
