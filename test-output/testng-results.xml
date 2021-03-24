@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-19T19:05:02Z" name="Tests_Login" finished-at="2021-02-19T19:05:24Z" duration-ms="21615">
+  <suite started-at="2021-03-08T20:43:17Z" name="Tests_Login" finished-at="2021-03-08T20:43:35Z" duration-ms="18042">
     <groups>
     </groups>
-    <test started-at="2021-02-19T19:05:02Z" name="Login - Google Chrome Execution" finished-at="2021-02-19T19:05:14Z" duration-ms="11646">
+    <test started-at="2021-03-08T20:43:17Z" name="Login - Google Chrome Execution" finished-at="2021-03-08T20:43:26Z" duration-ms="9369">
       <class name="tests.test_Login_Valid">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:02Z" name="setUp" finished-at="2021-02-19T19:05:09Z" duration-ms="7058" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-03-08T20:43:17Z" name="setUp" finished-at="2021-03-08T20:43:23Z" duration-ms="5664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:09Z" name="validResetPasswordTest" finished-at="2021-02-19T19:05:11Z" duration-ms="1722" status="PASS">
+        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-03-08T20:43:23Z" name="validResetPasswordTest" finished-at="2021-03-08T20:43:24Z" duration-ms="1278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validResetPasswordTest -->
-        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:11Z" name="validLoginTest" finished-at="2021-02-19T19:05:14Z" duration-ms="2595" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-03-08T20:43:24Z" name="validLoginTest" finished-at="2021-03-08T20:43:26Z" duration-ms="2218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-02-19T19:05:14Z" name="TearDown" finished-at="2021-02-19T19:05:14Z" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@3bd40a57]" started-at="2021-03-08T20:43:26Z" name="TearDown" finished-at="2021-03-08T20:43:26Z" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- tests.test_Login_Valid -->
     </test> <!-- Login - Google Chrome Execution -->
-    <test started-at="2021-02-19T19:05:02Z" name="Login - Mozilla Firefox Execution" finished-at="2021-02-19T19:05:24Z" duration-ms="21615">
+    <test started-at="2021-03-08T20:43:17Z" name="Login - Mozilla Firefox Execution" finished-at="2021-03-08T20:43:35Z" duration-ms="18042">
       <class name="tests.test_Login_Valid">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:02Z" name="setUp" finished-at="2021-02-19T19:05:18Z" duration-ms="15727" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-03-08T20:43:17Z" name="setUp" finished-at="2021-03-08T20:43:28Z" duration-ms="11141" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,15 +45,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:18Z" name="validResetPasswordTest" finished-at="2021-02-19T19:05:20Z" duration-ms="1655" status="PASS">
+        <test-method signature="validResetPasswordTest()[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-03-08T20:43:28Z" name="validResetPasswordTest" finished-at="2021-03-08T20:43:30Z" duration-ms="1568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validResetPasswordTest -->
-        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:20Z" name="validLoginTest" finished-at="2021-02-19T19:05:22Z" duration-ms="2246" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-03-08T20:43:30Z" name="validLoginTest" finished-at="2021-03-08T20:43:32Z" duration-ms="2694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-02-19T19:05:22Z" name="TearDown" finished-at="2021-02-19T19:05:24Z" duration-ms="1959" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.test_Login_Valid@1d082e88]" started-at="2021-03-08T20:43:32Z" name="TearDown" finished-at="2021-03-08T20:43:35Z" duration-ms="2610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
